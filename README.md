@@ -1,3 +1,7 @@
-# Project Status: Under Development
+# Tauri + SvelteKit + TypeScript
 
-This project is currently in active development. Features, structure, and functionality may change frequently.
+This template should help get you started developing with Tauri, SvelteKit and TypeScript in Vite.
+
+## Recommended IDE Setup
+
+[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).

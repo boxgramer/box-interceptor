@@ -12,6 +12,11 @@ const config = {
     adapter: adapter({
       fallback: "index.html",
     }),
+    alias: {
+      $lib: 'src/lib',
+      $assets: 'src/lib/assets',
+      $routes: 'src/routes',
+    }
   },
 };
 

@@ -8,6 +8,8 @@
 <script lang="ts">
 	import { Switch } from "@skeletonlabs/skeleton-svelte";
 	import TreeView from "$lib/component/TreeView.svelte";
+	import { onMount } from "svelte";
+
 	export let tableData: {
 		url: string;
 		isActive: boolean;
@@ -47,10 +49,18 @@
 	};
 
 	const min_width = 350;
-	const max_width = window.innerWidth;
-	const threshold_max = max_width - min_width;
-	let widthUrl: number = min_width; //use percent
-	let widthTree: number = max_width - min_width;
+
+	let max_width = 0;
+	let threshold_max = 0;
+	let widthUrl = 0;
+	let widthTree = 0;
+
+	onMount(() => {
+		max_width = window.innerWidth;
+		threshold_max = max_width - min_width;
+		widthUrl = min_width;
+		widthTree = max_width - min_width;
+	});
 
 	let isExpanding: boolean = false;
 	let initalWidth: number = widthUrl;
